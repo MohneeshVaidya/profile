@@ -133,7 +133,6 @@ header {
 }
 
 .zig-zag-box {
-    border: 1px solid red;
     display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     margin: 30px auto;
@@ -142,6 +141,7 @@ header {
 }
 
 .zig-zag-child {
+    border: 1px solid red;
     height: 170px;
     display: flex;
         align-items: center;
