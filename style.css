@@ -134,14 +134,13 @@ header {
 
 .zig-zag-box {
     display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        grid-template-columns: 2fr 2fr;
     margin: 30px auto;
     width: 75%;
     position: relative;
 }
 
 .zig-zag-child {
-    border: 1px solid red;
     height: 170px;
     display: flex;
         align-items: center;
@@ -250,12 +249,15 @@ td {
     .plane-pack {
         left: 97.4%;
     }
+    .zig-zag-box {
+        grid-template-columns: 1fr;
+    }
     .remove {
         display: none;
     }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 830px) {
     #section-nav {
         flex-direction: column;
         width: 99%;
@@ -267,7 +269,7 @@ td {
         height: 0;
     }
     .show-nav {
-        height: 288px;
+        height: 336px;
     }
     .nav-link {
         border-bottom: 1px solid white;
@@ -296,6 +298,12 @@ td {
     }
     #section-social {
         width: 60%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .skill, .project {
+        width: 69%;
     }
 }
 
